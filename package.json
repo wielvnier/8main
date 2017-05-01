@@ -1,0 +1,26 @@
+{
+  "name": "kodilla-modul8",
+  "version": "1.0.0",
+  "description": "JS-hint installation",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "kodilla-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wielvnier/modul8.git"
+  },
+  "keywords": [
+    "JS-hint"
+  ],
+  "author": "Filip Wielanier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wielvnier/modul8/issues"
+  },
+  "homepage": "https://github.com/wielvnier/modul8#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0"
+  }
+}
