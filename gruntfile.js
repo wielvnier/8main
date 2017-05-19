@@ -5,13 +5,15 @@ module.exports = function(grunt) {
   grunt.initConfig({
     jshint: {
       all: ['js/*.js']
-    }
-    options: {
-        sourceMap: true
-      },
-      dist: {
-        files: {
-          'css/main.css': 'style.sass'
+    },
+    sass: {
+      options: {
+          sourceMap: true
+        },
+        dist: {
+          files: {
+            'css/main.css': 'style.sass'
+          }
         }
       }
     }
@@ -19,7 +21,6 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  grunt.registerTask('default', ['jshint']);
-  grunt.registerTask('default', ['sass']);
+  grunt.registerTask('default', ['sass', 'jshint']);
 
 };
