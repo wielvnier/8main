@@ -6,9 +6,9 @@ var value = (a * a) + (2 * a * b) - (b * b);
 console.log(value);
 
 if (value > 0 ) {
-    console.log(‘Wynik jest dodatni’);
+    console.log('Wynik jest dodatni');
 } else if (value < 0 ) {
-    console.log(‘Wynik jest ujemny’);
+    console.log('Wynik jest ujemny');
 } else {
-    console.log(‘Wynik jest równy zero’);
+    console.log('Wynik jest równy zero');
 }
