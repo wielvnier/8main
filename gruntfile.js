@@ -4,10 +4,20 @@ module.exports = function(grunt) {
     jshint: {
       all: ['js/*.js']
     }
+    sass: {
+      options: {
+        sourceMap: true
+    },
+      dist: {
+      files:{
+        'css/style.css': 'style.css'
+        } 
+      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  grunt.registerTask('default', ['jshint']);
+  grunt.registerTask('default', ['sass', 'jshint']);
 
 };
